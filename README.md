@@ -45,3 +45,25 @@ You can view the live version of the website here:
 ![Responsive View](screenshots/responsive1.png)
 
 ![Responsive View](screenshots/responsive.png)
+
+## 🧩 Challenges Faced & Solutions
+
+### 1. Overlapping Navigation Bar
+- **Issue:** The fixed navbar overlapped the top content when scrolling or using anchor links.
+- **Solution:** Applied `padding-top` to sections and used `scroll-padding-top` in the HTML element to offset the fixed nav height.
+
+### 2. Responsive Design Adjustments
+- **Issue:** The layout and text alignment broke on smaller screen sizes.
+- **Solution:** Utilized Flexbox and relative units (`%`, `em`, `vh`) to ensure proper scaling, and tested across multiple device sizes.
+
+### 3. Text Overflow in Hero Section
+- **Issue:** Animated text and headings sometimes exceeded the container width.
+- **Solution:** Used `white-space: nowrap`, overflow handling, and adjusted font sizes within media queries.
+
+### 4. Countdown Timer Timing Issues
+- **Issue:** Timer values were inconsistent due to timezone mismatches.
+- **Solution:** Converted target times to local browser time using JavaScript `Date` objects to ensure consistency.
+
+---
+
+> Each of these challenges helped reinforce responsive design principles, layout debugging, and user-centered development.
