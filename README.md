@@ -67,3 +67,8 @@ You can view the live version of the website here:
 ---
 
 > Each of these challenges helped reinforce responsive design principles, layout debugging, and user-centered development.
+
+## 🔗 Live Demo
+
+You can view the live version of the website here:  
+👉 [HackVerse 2025 Website](https://hack-verse-2025-website.vercel.app/)
