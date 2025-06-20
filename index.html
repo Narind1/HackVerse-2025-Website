@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="'IE=edge">
+    <meta name="viewport" content="interactive-widget=resizes-content" />
+    <title>Narind Verma Website</title>
+    <link rel="stylesheet" href ="style.css">
+    <script src="https://kit.fontawesome.com/e0d81805a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+<div id="header">
+    <div class="contain">
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul id="sidemenu">    
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Details</a></li>
+                <li><a href="#registration">Register</a></li>            
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+            <div class="header-text">
+                <div class="center-text">
+                  <h1 >HackVerse 2025</h1>
+
+                  <h2 class="typing-text"><span class="type"></span></h2>
+                  <p class="description">
+                  Join us for an electrifying 24-hour hackathon where innovation meets execution! 
+                  HackVerse 2025 is designed for students of all levels to collaborate, brainstorm, 
+                  and build real-world tech solutions. Whether you're a beginner or a pro, this is your platform to shine.
+                  </p>
+                  <p class="event-info">
+                    📅 <strong>Date:</strong> July 22–23, 2025<br>
+                    🕒 <strong>Time:</strong> 10:00 AM (22nd) to 10:00 AM (23rd)<br>
+                    📍 <strong>Venue:</strong> UPES Campus, Dehradun
+                  </p>
+                  <div id="countdown">
+                    <h3>⏳ Time Remaining:</h3>
+                    <div class="timer">
+                        <span id="days">00</span> Days
+                        <span id="hours">00</span> Hrs
+                        <span id="minutes">00</span> Min
+                        <span id="seconds">00</span> Sec
+                    </div>
+                    </div>
+
+                  <a href="#registration" class="btn btn2">Register Now</a>
+                </div>
+            
+
+        </div>
+    </div>
+</div>
+<!-----------------Event Details------------------------->  
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="img/event.png" alt="Event Poster">
+      </div>
+
+      <div class="about-col-2">
+        <h1 class="sub-title">HackVerse 2025</h1>
+        <p>HackVerse 2025 is an electrifying 24-hour hackathon that brings together coders, innovators, and creators to build real-world tech solutions. Whether you're a beginner or a pro, there's a challenge waiting for you!</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('schedule')">Schedule</p>
+          <p class="tab-links" onclick="opentab('rules')">Rules</p>
+          <p class="tab-links" onclick="opentab('prizes')">Prizes</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="schedule">
+          <ul>
+            <li><span>10:00 AM – 11:00 AM</span><br>Opening Ceremony</li>
+            <li><span>11:00 AM – 09:00 PM</span><br>Hacking Phase 1</li>
+            <li><span>09:00 PM – 10:00 AM</span><br>Hacking Phase 2</li>
+            <li><span>10:00 AM – 01:00 PM</span><br>Demos & Closing</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="rules">
+          <ul>
+            <li>Teams must consist of 2–4 members</li>
+            <li>Code should be written during the event only</li>
+            <li>Respectful and inclusive behavior is mandatory</li>
+            <li>Use of pre-trained models is allowed with citation</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="prizes">
+          <ul>
+            <li><span>🏆 First Prize:</span> ₹10,000 + Internship Offer</li>
+            <li><span>🎉 Second Prize:</span> ₹5,000 + Goodies</li>
+            <li><span>📜 All Participants:</span> Certificates + Swag</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-----------------Hackathon Features------------------------->
+<div id="about">
+  <div class="container">
+    <h1 class="sub-title">Why Join HackVerse 2025?</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-lightbulb"></i>
+        <h2>Innovate & Build</h2>
+        <p>Team up and work on real-world tech problems using cutting-edge technologies. Bring your most creative ideas to life and compete for exciting rewards.</p>
+        <a href="#">Explore Tracks</a>   
+      </div>
+      <div>
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <h2>Mentorship & Learning</h2>
+        <p>Get guidance from experienced mentors and professionals throughout the event. Learn by doing, boost your skills, and make your project stand out.</p>
+        <a href="#">Meet Mentors</a>   
+      </div>
+      <div>
+        <i class="fa-solid fa-gift"></i>
+        <h2>Prizes & Perks</h2>
+        <p>Win exciting cash prizes, certificates, goodies, and internship offers. All participants get something to take home — knowledge, swag, or both!</p>
+        <a href="#">See Rewards</a>   
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------ Registration------------- -->
+<div id="registration">
+  <div class="container">
+    <div class="row">
+      <div class="registration-left">
+        <h2 class="sub-title">Register for HackVerse 2025</h2>
+        <h2>Be part of 24 hours of coding, creativity, and collaboration. Fill in your details below to secure your spot!</h3>
+      </div>
+      <div class="registration-right">
+        <form id="regForm" onsubmit="showSuccessMessage(event)">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <input type="tel" name="Phone" placeholder="Your Phone Number" required>
+          <input type="text" name="College" placeholder="Your College" required>
+          <button type="submit" class="btn btn2">Register</button>
+        </form>
+        <h3 id="successMsg" style="display: none; color: #0f0; margin-top: 15px;">
+          ✅ Registration successful! We'll get back to you soon.
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Contact Section -->
+<div id="contact" class="contact-section">
+  <div class="container contact-container">
+    
+    <!-- Left Side: Contact Info -->
+    <div class="contact-left">
+      <h1 class="sub-title">Contact Us</h1>
+      <p><i class="fas fa-envelope"></i> hackverse2025@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +91 9876543210</p>
+      <p><i class="fas fa-map-marker-alt"></i> UPES Campus, Dehradun, India</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/upescsi/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/upescsi" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/upes-csi-student-chapter/?originalSubdomain=in" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/UPES-CSI" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+
+    </div>
+
+    <!-- Right Side: Embedded Map -->
+    <div class="contact-right">
+      <h3 style="margin-bottom: 20px;">Find Us Here</h3>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.046243607859!2d77.9641721!3d30.4158747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d4890d7c1735%3A0x22d3ae324c238e3c!2sUPES!5e0!3m2!1sen!2sin!4v1713457891011!5m2!1sen!2sin"
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="copyright">
+    <p>© 2025 HackVerse | Made with <i class="fa-solid fa-heart"></i> by Narind Verma</p>
+  </div>
+</div>
+
+<!------------------------- JavaScript----------------- -->
+
+<script> 
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+   function opentab(tabname){
+    for (tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+<script>
+
+    var sidemeu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+<!-- cAN ADD THIS FOR SAVING THE RESPONSE OF THE DATA STUDENTS SUBMIT---------->
+
+ <!-- <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyPdSvPc_xmVzrCqERm6_-KesGed3df-ApXvzOoiuhtmtbggcvVGgQ3iFpq_vNGK8JlRA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      } )
+      .catch(error => console.error('Error!', error.message))
+  })
+</script> -->
+
+<script>
+  const texts = [
+  "Create "," Code", " Conquer", " Innovate", " Inspire", " Build", " Develop","Define","Define more", "And some more", "A little more", "Never stop"
+];
+  let count = 0;
+  let index = 0;
+  let currentText = '';
+  let letter = '';
+
+  (function type(){
+    if (count === texts.length) {
+      count = 0;
+    }
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.querySelector('.type').textContent = letter;
+    if(letter.length === currentText.length){
+      setTimeout(() => {
+        index = 0;
+        count++;
+        setTimeout(type, 500);
+      }, 1500);
+    } else {
+      setTimeout(type, 100);
+    }
+  })();
+</script>
+
+<a href="#header" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+<script>
+  const scrollBtn = document.querySelector(".scroll-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add("show");
+    } else {
+      scrollBtn.classList.remove("show");
+    }
+  });
+</script>
+<script>
+  const targetDate = new Date("July 22, 2025 10:00:00").getTime();
+
+  const countdown = setInterval(() => {
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days.toString().padStart(2, '0');
+    document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+
+    if (diff <= 0) {
+      clearInterval(countdown);
+      document.getElementById("countdown").innerHTML = "<h3>🚀 Hackathon Started!</h3>";
+    }
+  }, 1000);
+</script>
+<script>
+  function showSuccessMessage(e) {
+    e.preventDefault();
+    document.getElementById("successMsg").style.display = "block";
+    document.getElementById("regForm").reset();
+
+    setTimeout(() => {
+      document.getElementById("successMsg").style.display = "none";
+    }, 5000);
+    
+    return false;
+  }
+</script>
+
+
+</body>
+</html>
