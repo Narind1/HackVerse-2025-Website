@@ -17,11 +17,11 @@ To run the project locally, follow these steps:
    ```bash
    git clone https://github.com/Narind1/HackVerse-2025-Website.git
 2. **Navigate to the project directory**
-    cd HackVerse-2025-Website
+       cd HackVerse-2025-Website
 3. **Open the project in your browser**
-  Locate the index.html file and open it directly, or use:
-    start index.html   # Windows
-    open index.html    # macOS
+        Locate the index.html file and open it directly, or use:
+          start index.html   # Windows
+          open index.html    # macOS
 ## 🔗 Live Demo
 
 You can view the live version of the website here:  
