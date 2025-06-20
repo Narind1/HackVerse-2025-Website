@@ -42,5 +42,6 @@ You can view the live version of the website here:
 ![Registration Form](screenshots/register.png)
 
 ### 🔹 Responsive View (Mobile)
-![Responsive View](screenshots/responsive.png)
+![Responsive View](screenshots/responsive1.png)
 
+![Responsive View](screenshots/responsive.png)
