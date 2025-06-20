@@ -29,3 +29,18 @@ To run the project locally, follow these steps:
 
 You can view the live version of the website here:  
 👉 [HackVerse 2025 Website](https://hack-verse-2025-website.vercel.app/)
+
+## 📸 Screenshots
+
+### 🔹 Hero / Landing Section
+![Hero Section](screenshots/hero-section.png)
+
+### 🔹 Countdown Timer
+![Countdown Timer](screenshots/countdown.png)
+
+### 🔹 Registration Form
+![Registration Form](screenshots/register.png)
+
+### 🔹 Responsive View (Mobile)
+![Responsive View](screenshots/responsive.png)
+
